@@ -1,0 +1,117 @@
+header {
+    background-image: url("img/capa-header.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.cabecalho {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 80px;
+  line-height: 0.8;
+}
+
+.branco {
+  color: white;
+}
+
+.amarelo {
+  color: yellow;
+}
+
+button {
+    background-color: yellow;
+    border: none;
+    width: 180px;
+    height: 35px;
+    font-size: 16px;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: ghostwhite;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.problema {
+    display: flex;
+}
+
+.problema-bloco{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.problema-texto{
+    text-align: center;
+}
+.problema-card{
+    display: flex;
+    gap: 20px;
+
+}
+
+.tech-bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tech-texto {
+    text-align: center;
+}
+
+.tech-card {
+    display: flex;
+    gap: 20px;
+}
+
+.acao-bloco{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.acao-texto{
+    text-align: center;
+}
+.acao-card{
+    display: flex;
+    gap: 20px;    
+}
+.quiz {
+    background-color: black;
+    color: white;
+}
+
+
+.card5 {
+    display: flex;
+}
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.acao {
+    display: flex;
+}
+footer {
+    background-color: brown;
+}

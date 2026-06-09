@@ -4,41 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologia Contra o Desperdício</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav></nav>
-        <div>
-            <h1>Tecnologia Contra o Desperdício</h1>
+        <div class="cabecalho">
+            <h1>Tecnologia <span class="branco"></span><br>
+                <span class="amarelo">Contra o Desperdício</span></h1>
             <h3>Como decisões inteligentes podem tornar
                 a indústria mais eficiente e sustentável.
             </h3>
-            <button>Descobrir Soluções</button>
-        </div>
+            <button id="botao-header">Descobrir Soluções</button>
+        </div>    
     </header>
 
     <main>
-        <div>
-            <h3>O Desperdício tem um custo</h3>
-        <p>Perdas de recursos naturais impactam o meio e os resultados da indústria.</p>
-        <p>Pequenas melhorias geram grandes transformações.</p>
-        </div>
 
-        <div>
-            <h4>Energia</h4>
-            <p>Equipamentos ineficientes e processos mal monitorados aumentam o consumo energético.</p>
-            <p>Mais consumo, mais custos, mais impacto.</p>
+        <section class="problema-bloco">
+            <div class="problema-texto">
+                <h3>O Desperdício tem um custo</h3>
+                <p>Perdas de recursos naturais impactam o meio e os resultados da indústria.</p>
+                <p>Pequenas melhorias geram grandes transformações.</p>
+            </div>
 
-            <h4>Água</h4>
-            <p>Vazamentos, limpeza inadequada e falta de controle desperdiçam um recurso essencial.</p>
-            <p>Cada gota economizada faz a diferença.</p>
+            <div class="problema-card">
+                <div class="card">
+                <h4>Energia</h4>
+                    <p>Equipamentos ineficientes e processos mal monitorados aumentam o consumo energético.</p>
+                    <p>Mais consumo, mais custos, mais impacto.</p>
+                </div>
 
-            <h4>Materiais</h4>
-            <p>Falhas operacionais e excesso de perdas geram desperdício de matéria prima e aumento de resíduos.</p>
-            <p>Menos Desperdício</p>
-        </div>
+                <div class="card">
+                    <h4>Água</h4>
+                        <p>Vazamentos, limpeza inadequada e falta de controle desperdiçam um recurso essencial.</p>
+                        <p>Cada gota economizada faz a diferença.</p>
+                </div>
 
+                <div class="card">
+                    <h4>Materiais</h4>
+                        <p>Falhas operacionais e excesso de perdas geram desperdício de matéria prima e aumento de resíduos.</p>
+                        <p>Menos Desperdício</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-bloco">
+            <div class="tech-texto">
+                <h3>A tecnologia como aliada da sustentabilidade</h3>
+                    <p>Inovação, dados e automação ajudam a reduzir desperdícios e construir uma indústria melhor para todos.</p>
+            </div>
+
+            <div class="tech-card">
+                <div class="card">
+                    <h4>Sensores Inteligentes</h4>
+                        <p>Monitoram equipamentos e consumos em tempo real, identificando vazamentos, falhas e excessos.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Automação</h4>
+                        <p>Processos automatizados reduzem erros humanos e garantem o uso eficiente dos recursos.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Análise de Dados</h4>
+                        <p>Dados transformados em informações permitem decisões mais rápidas, precisas e sustentáveis.</p>
+                </div>
+            </div>
+        </section>    
+ 
+        <section class="quiz">
+                <h3>Sua indústria toma decisões sustentáveis?</h3>
+                <h4>Responda e descubra!</h4>
+                <div >
+                <p>O consumo de energia é monitorado?</p>
+                    <label > <input type="radio" name="q1"> Sim </label>
+                    <label > <input type="radio" name="q1"> Não </label>
+                </div> 
+                <div >  
+                <p>Existem ações para reduzir o desperdícios?</p>
+                    <label > <input type="radio" name="q2"> Sim </label>
+                    <label > <input type="radio" name="q2"> Não </label>
+                </div> 
+                <div >
+                <p>A empresa utiliza tecnologias para otimizar processos?</p>
+                    <label > <input type="radio" name="q3"> Sim </label>
+                    <label > <input type="radio" name="q3"> Não </label>
+                </div>
+                <button id="botao-quiz">Ver resultado</button>
+                    
+                <!--   <p>Parabéns! Sua indústria está no caminho certo.</p>
+                    <p><strong>A tecnologia está ajudando a construir uma operação mais eficiente e sustentável.</strong></p>
+                    <p>Continue assim e inspire outras empresas a fazerem o mesmo</p> -->
+                    
+        </section>
+
+        <section class="acao-bloco">
+            <div class="acao-texto">
+                <h3>Ações que fazem a diferença todos os dias</h3>
+            </div>
+            <div class="acao-card">
+                <p class="card">Feche a torneira quando não estiver usando</p>
+                <p class="card">Avise quando perceber um vazamento</p>
+                <p class="card" >Reutilize água de limpeza quando der</p>
+                <p class="card">Use copo com garrafa reutilizável</p>
+                <p class="card">Conte para seus colegas essas dicas</p>
+            </div>
+
+        </section>
     </main>
+
     <footer></footer>
     
 </body>
