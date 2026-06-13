@@ -33,7 +33,6 @@ button {
     font-size: 16px;
 }
 
-
 main {
   display: flex;
   flex-direction: column;
@@ -46,61 +45,58 @@ section {
   padding: 40px 20px;
 }
 
-.problema {
-    display: flex;
-}
-
-.problema-bloco{
+.problema-container{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.problema-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
 }
 .problema-texto{
     text-align: center;
 }
-.problema-card{
+.problema-bloco{
     display: flex;
     gap: 20px;
-
 }
-
-.tech-bloco {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.card-topo {
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+.card-destaque-01 {
+    border-radius: 0 0 10px 10px;
+    background-color: #a5c9f0; 
+    padding: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card-destaque-02 {
+    border-radius: 0 0 10px 10px;
+    background-color:rgb(201, 222, 179); 
+    padding: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 
-.tech-texto {
-    text-align: center;
 }
 
 .tech-card {
     display: flex;
     gap: 20px;
 }
-
-.acao-bloco{
+.tech-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.acao-texto{
+.tech-texto {
     text-align: center;
 }
-.acao-card{
-    display: flex;
-    gap: 20px;    
-}
-.quiz {
-    background-color: black;
-    color: white;
-}
-
-
-.card5 {
-    display: flex;
-}
-.card {
+.tech {
     border: 1px solid #ddd;
     padding: 20px;
     margin: 10px 0;
@@ -109,9 +105,40 @@ section {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.acao {
-    display: flex;
+.quiz-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    margin-bottom: 3px;
 }
+
+
+.acao-card {
+    display: flex;
+    gap: 20px;
+}
+.acao-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.acao-texto {
+    text-align: center;
+}
+.acao {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);   
+}
+
 footer {
     background-color: brown;
 }
