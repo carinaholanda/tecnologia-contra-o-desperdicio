@@ -1,12 +1,51 @@
+.menu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background-color:rgba(255,255,255,0.9);
+}
+.logo {
+    height: 40px;
+    width: auto;
+}
+.menu h2 {
+    color:#1f5f2c;
+}
+
+.menu ul {
+    display:flex;
+    gap:15px;
+    list-style:none;
+}
+
+.menu a {
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.menu a:hover {
+    color:#4caf50;
+}
+
 header {
     background-image: url("img/capa-header.png");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 550px;
     color: white;
     display: flex;
     flex-direction: column;
+     position:relative;
 }
+header::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
 .cabecalho {
   flex: 1;
   display: flex;
@@ -15,6 +54,15 @@ header {
   text-align: left;
   padding: 80px;
   line-height: 0.8;
+    position:relative;
+    z-index:1;
+}
+.cabecalho h1 {
+    font-size: 60px;
+}
+.cabecalho h3 {
+    font-size: 28px;
+    line-height: 1.4;
 }
 
 .branco {
@@ -22,7 +70,7 @@ header {
 }
 
 .amarelo {
-  color: yellow;
+    color:#7ed957;
 }
 
 button {
@@ -31,6 +79,9 @@ button {
     width: 180px;
     height: 35px;
     font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 main {
@@ -45,20 +96,20 @@ section {
   padding: 40px 20px;
 }
 
-.problema-container{
+.problema-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.problema-card{
+.problema-card {
     display: flex;
     flex-direction: column;
     gap: 0px;
 }
-.problema-texto{
+.problema-texto {
     text-align: center;
 }
-.problema-bloco{
+.problema-bloco {
     display: flex;
     gap: 20px;
 }
@@ -109,14 +160,40 @@ section {
     border: 1px solid #ddd;
     padding: 20px;
     margin: 10px 0;
-    border-radius: 10px;
-    background-color: black;
     color: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: left;
     margin-bottom: 3px;
+    background:linear-gradient(
+        135deg,
+        #003b25,
+        #0d5e3a,
+        #003b25
+    );
+
+    width:90%;
+    border-radius:15px;
+}
+.quiz-conteudo {
+    display:flex;
+    gap:30px;
+    align-items:stretch;
 }
 
+.quiz-perguntas {
+    flex:1;
+}
+
+#resultado {
+    flex:1;
+}
+
+.pergunta {
+    background:rgba(255,255,255,0.08);
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
 
 .acao-card {
     display: flex;
@@ -139,6 +216,69 @@ section {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);   
 }
 
-footer {
-    background-color: brown;
+#resultado {
+    margin-top:20px;
 }
+
+.resultado-card {
+    background:white;
+    color:black;
+    border-radius:10px;
+    padding:30px;
+    height:100%;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.resultado-card h2 {
+    font-size:60px;
+    margin:0;
+    color:#1b5e20;
+}
+
+.resultado-card h3 {
+    color:#1b5e20;
+    font-size:32px;
+}
+
+.subtitulo-quiz {
+    color:#9acd32;
+}
+
+
+.excelente {
+    border-left:8px solid green;
+}
+
+.bom {
+    border-left:8px solid #8bc34a;
+}
+
+.atencao{
+    border-left:8px solid orange;
+} 
+
+.ruim{
+    border-left:8px solid red;
+}
+
+@media (max-width: 768px) {
+
+    .quiz-conteudo{
+        flex-direction:column;
+    }
+
+}
+footer {
+    background:linear-gradient(
+        to right,
+        #012d1b,
+        #0d5e3a
+    );
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+

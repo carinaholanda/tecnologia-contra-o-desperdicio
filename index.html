@@ -5,25 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologia Contra o Desperdício</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav></nav>
+    <nav class="menu">
+        <img src="/img/logo.png" alt="Logo" class="logo">
+
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#impactos">Impactos</a></li>
+            <li><a href="#solucoes">Soluções</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio">
         <div class="cabecalho">
             <h1>
-  Tecnologia <br>
-  <span class="amarelo">Contra o Desperdício</span>
-</h1>
+                Tecnologia <br>
+                <span class="amarelo">Contra o Desperdício</span>
+            </h1>
             <h3>Como decisões inteligentes podem tornar
                 a indústria mais eficiente e sustentável.
             </h3>
-            <button id="botao-header">Descobrir Soluções</button>
+            <button id="button-header">
+                <a href="#solucoes">Descobrir Soluções</a>
+                </button>
         </div>    
     </header>
 
     <main>
 
-        <section class="problema-container">
+        <section id="impactos" class="problema-container">
             <div class="problema-topo">
                 <div class="problema-texto">
                     <h3>O Desperdício tem um custo</h3>
@@ -66,7 +79,7 @@
             </div>     
         </section>
 
-        <section class="tech-container">
+        <section id="solucoes" class="tech-container">
             <div class="tech-texto">
                 <h3>A tecnologia como aliada da sustentabilidade</h3>
                 <p>Inovação, dados e automação ajudam a reduzir desperdícios e construir uma indústria melhor para todos.</p>
@@ -90,30 +103,55 @@
             </div>
         </section>    
  
-        <section class="quiz-container">
-                <h3>Sua indústria toma decisões sustentáveis?</h3>
-                <h4 style="color: yellow;">Responda e descubra!</h4>
-                <br>
-                <div>
-                <p>O consumo de energia é monitorado?</p>
-                    <label > <input type="radio" name="q1"> Sim </label>
-                    <label > <input type="radio" name="q1"> Não </label>
-                </div> 
-                <div >  
-                <p>Existem ações para reduzir o desperdícios?</p>
-                    <label > <input type="radio" name="q2"> Sim </label>
-                    <label > <input type="radio" name="q2"> Não </label>
-                </div> 
-                <div>
-                <p>A empresa utiliza tecnologias para otimizar processos?</p>
-                    <label > <input type="radio" name="q3"> Sim </label>
-                    <label > <input type="radio" name="q3"> Não </label>
+        <section id="quiz" class="quiz-container">
+            <h3>Sua indústria toma decisões sustentáveis?</h3>
+            <h4 class="subtitulo-quiz">Responda e descubra!</h4>
+
+            <div class="quiz-conteudo">
+
+                <div class="quiz-perguntas">
+
+                    <div class="pergunta">
+                        <p>1. O consumo de energia é monitorado?</p>
+                        <label><input type="radio" name="q1" value="sim"> Sim</label>
+                        <label><input type="radio" name="q1" value="nao"> Não</label>
+                    </div>
+
+                    <div class="pergunta">
+                        <p>2. Existem ações para reduzir desperdícios?</p>
+                        <label><input type="radio" name="q2" value="sim"> Sim</label>
+                        <label><input type="radio" name="q2" value="nao"> Não</label>
+                    </div>
+
+                    <div class="pergunta">
+                        <p>3. A empresa utiliza tecnologias para otimizar processos?</p>
+                        <label><input type="radio" name="q3" value="sim"> Sim</label>
+                        <label><input type="radio" name="q3" value="nao"> Não</label>
+                    </div>
+
+                    <button id="botao-quiz">Ver resultado</button>
+
                 </div>
-                <button id="botao-quiz">Ver resultado</button>
-                    
-                <!--   <p>Parabéns! Sua indústria está no caminho certo.</p>
-                    <p><strong>A tecnologia está ajudando a construir uma operação mais eficiente e sustentável.</strong></p>
-                    <p>Continue assim e inspire outras empresas a fazerem o mesmo</p> -->
+
+                <div id="resultado">
+
+                    <div class="resultado-card">
+                        <h2>0</h2>
+                        <p>de 3 pontos</p>
+
+                        <h3>Resultado</h3>
+
+                        <p>
+                            Responda às perguntas para descobrir
+                            o nível de sustentabilidade da empresa.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
                     
         </section>
 
@@ -132,7 +170,19 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="rodape">
+            <h3>Tecnologia Contra o Desperdício</h3>
+
+            <p>
+                Decisões inteligentes constroem um futuro sustentável.
+            </p>
+
+            <p>
+                Projeto Integrador • Liga STEAM • 2026
+            </p>
+        </div>
+    </footer>
     
 </body>
 </html>
