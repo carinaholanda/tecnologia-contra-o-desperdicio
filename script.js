@@ -27,7 +27,7 @@ botaoQuiz.addEventListener("click", function () {
         resultado.innerHTML = `
             <div class="resultado-card excelente">
                 <h2>${pontos} de 3 pontos</h2>
-                <h3>Excelente!</h3>
+                <h3> 🌱Excelente!</h3>
 
                 <p>
                     Parabéns! Sua indústria está no caminho certo.
@@ -39,9 +39,11 @@ botaoQuiz.addEventListener("click", function () {
                     </strong>
                 </p>
 
-                <p>
-                    Continue assim e inspire outras empresas!
-                </p>
+                <div>
+                    <p>
+                        Continue assim e inspire outras empresas!
+                    </p>
+                 </div> 
             </div>
         `;
 
@@ -50,7 +52,7 @@ botaoQuiz.addEventListener("click", function () {
         resultado.innerHTML = `
             <div class="resultado-card bom">
                 <h2>${pontos} de 3 pontos</h2>
-                <h3>Bom caminho!</h3>
+                <h3>👍Bom caminho!</h3>
 
                 <p>
                     Sua empresa já possui boas práticas,
@@ -64,7 +66,7 @@ botaoQuiz.addEventListener("click", function () {
         resultado.innerHTML = `
             <div class="resultado-card atencao">
                 <h2>${pontos} de 3 pontos</h2>
-                <h3>Atenção</h3>
+                <h3>⚠️Atenção</h3>
 
                 <p>
                     Existem diversas oportunidades para reduzir desperdícios.
@@ -78,7 +80,7 @@ botaoQuiz.addEventListener("click", function () {
             <div class="resultado-card ruim">
                 <h2>0 de 3 pontos</h2>
 
-                <h3>Hora de agir!</h3>
+                <h3>🚨Hora de agir!</h3>
 
                 <p>
                     Pequenas mudanças podem gerar grandes resultados.

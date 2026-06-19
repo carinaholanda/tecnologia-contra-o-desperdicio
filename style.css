@@ -1,16 +1,19 @@
+
 .menu{
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 60px;
-    background-color:rgba(255,255,255,0.9);
+    background-color:#1f5f2c;
+    height: 15px;
+    width: auto;
 }
 .logo {
-    height: 40px;
+    height: 35px;
     width: auto;
 }
 .menu h2 {
-    color:#1f5f2c;
+    color:white;
 }
 
 .menu ul {
@@ -21,7 +24,7 @@
 
 .menu a {
     text-decoration:none;
-    color:black;
+    color:white;
     font-weight:bold;
 }
 
@@ -74,7 +77,9 @@ header::before {
 }
 
 button {
-    background-color: yellow;
+    text-decoration: none;
+    background-color: #7ed957;
+    color: white;
     border: none;
     width: 180px;
     height: 35px;
@@ -82,6 +87,28 @@ button {
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#botao-header{
+    background-color: #7ED957;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#botao-header{
+    border: none;
+    outline: none;
+}
+#botao-header:hover{
+    background-color: #68c247;
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 main {
@@ -100,41 +127,70 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #f1f8f1;
+    box-sizing: border-box;
+    width: 100%;
+
 }
 .problema-card {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    flex: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
 }
+
 .problema-texto {
     text-align: center;
 }
 .problema-bloco {
     display: flex;
     gap: 20px;
+    align-items: stretch;
+    width: 90%;
 }
 .card-topo {
+    flex: 1;
+    flex-direction: column;
     border-radius: 10px 10px 0 0;
-    padding: 20px;
+    padding: 15px;
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
 }
+
 .card-destaque-01 {
     border-radius: 0 0 10px 10px;
-    background-color: #a5c9f0; 
+    background-color:#c7e3cd; 
     padding: 20px;
     font-weight: bold;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card-destaque-01 img {
+    height: 30px;
+    width: auto;
 }
 .card-destaque-02 {
     border-radius: 0 0 10px 10px;
-    background-color:rgb(201, 222, 179); 
+    background-color: #b3d2f2; 
     padding: 20px;
     font-weight: bold;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 
 }
+.card-destaque-02 img {
+    height: 30px;
+    width: auto;
+}
+.card-cabecalho{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
+.card-cabecalho img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
 .tech-card {
     display: flex;
     gap: 20px;
@@ -143,6 +199,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 80%;
 }
 .tech-texto {
     text-align: center;
@@ -175,9 +232,9 @@ section {
     border-radius:15px;
 }
 .quiz-conteudo {
-    display:flex;
-    gap:30px;
-    align-items:stretch;
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
 }
 
 .quiz-perguntas {
@@ -185,7 +242,8 @@ section {
 }
 
 #resultado {
-    flex:1;
+    flex: 1;
+    display: flex;
 }
 
 .pergunta {
@@ -203,50 +261,67 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #f1f8f1;
+    width: 100%;
+    box-sizing: border-box;
 }
 .acao-texto {
     text-align: center;
 }
 .acao {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
     border: 1px solid #ddd;
     padding: 20px;
     margin: 10px 0;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);   
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
 }
-
-#resultado {
-    margin-top:20px;
+.acao img {
+    height: 30px;
+    width: auto;
 }
-
 .resultado-card {
     background:white;
     color:black;
-    border-radius:10px;
+    border-radius:15px;
     padding:30px;
     height:100%;
     text-align:center;
-
+    width: 100%;
+    box-sizing: border-box;
     display:flex;
     flex-direction:column;
     justify-content:center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        animation: aparecer 0.5s ease;
 }
 .resultado-card h2 {
     font-size:60px;
     margin:0;
-    color:#1b5e20;
+    color:#0d5e3a;
 }
 
 .resultado-card h3 {
-    color:#1b5e20;
+    color: #0d5e3a;
     font-size:32px;
+}
+.resultado-pontos{
+    font-size: 70px;
+    font-weight: bold;
+    color: #1b5e20;
+    margin: 0;
+}
+.resultado-total{
+    font-size: 18px;
+    color: #555;
 }
 
 .subtitulo-quiz {
     color:#9acd32;
 }
-
 
 .excelente {
     border-left:8px solid green;
@@ -264,6 +339,15 @@ section {
     border-left:8px solid red;
 }
 
+.dica-final{
+    background: #e8f5e9;
+    color: #1b5e20;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
 
     .quiz-conteudo{
@@ -271,6 +355,18 @@ section {
     }
 
 }
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 footer {
     background:linear-gradient(
         to right,
@@ -280,5 +376,8 @@ footer {
     color:white;
     text-align:center;
     padding:40px;
+}
+footer img {
+    height: 50px;
 }
 
