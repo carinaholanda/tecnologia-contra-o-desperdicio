@@ -10,10 +10,11 @@ botaoQuiz.addEventListener("click", function () {
     const q3 = document.querySelector('input[name="q3"]:checked');
 
     if (!q1 || !q2 || !q3) {
-        resultado.innerHTML = `
-            <p style="color:yellow;">
-                Responda todas as perguntas.
-            </p>
+    resultado.innerHTML = `
+        <div class="resultado-card atencao">
+            <h3>⚠️ Atenção</h3>
+            <p>Responda todas as perguntas antes de continuar.</p>
+        </div>
         `;
         return;
     }
@@ -55,8 +56,8 @@ botaoQuiz.addEventListener("click", function () {
                 <h3>👍Bom caminho!</h3>
 
                 <p>
-                    Sua empresa já possui boas práticas,
-                    mas ainda há oportunidades de melhoria.
+                    Sua empresa já adota práticas sustentáveis,
+                    mas ainda pode utilizar mais tecnologia para reduzir desperdícios.
                 </p>
             </div>
         `;

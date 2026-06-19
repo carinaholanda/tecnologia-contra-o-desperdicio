@@ -5,8 +5,8 @@
     align-items:center;
     padding:20px 60px;
     background-color:#1f5f2c;
-    height: 15px;
-    width: auto;
+
+
 }
 .logo {
     height: 35px;
@@ -56,7 +56,7 @@ header::before {
   align-items: flex-start;
   text-align: left;
   padding: 80px;
-  line-height: 0.8;
+      line-height:1.2;
     position:relative;
     z-index:1;
 }
@@ -81,26 +81,19 @@ button {
     background-color: #7ed957;
     color: white;
     border: none;
-    width: 180px;
+    width: 200px;
     height: 35px;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+
 }
 a{
     text-decoration: none;
     color: white;
 }
-#botao-header{
-    background-color: #7ED957;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 24px;
-    font-weight: bold;
-    cursor: pointer;
-}
+
 #botao-header{
     border: none;
     outline: none;
@@ -129,26 +122,28 @@ section {
     gap: 20px;
     background-color: #f1f8f1;
     box-sizing: border-box;
-    width: 100%;
 
+}
+.problema-bloco {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    width: 100%;
+    margin: 0 auto;
 }
 .problema-card {
     display: flex;
     flex-direction: column;
     flex: 1;
+    background-color: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
 }
 
 .problema-texto {
     text-align: center;
 }
-.problema-bloco {
-    display: flex;
-    gap: 20px;
-    align-items: stretch;
-    width: 90%;
-}
-.card-topo {
+
+.card-problema-topo {
     flex: 1;
     flex-direction: column;
     border-radius: 10px 10px 0 0;
@@ -162,7 +157,7 @@ section {
     background-color:#c7e3cd; 
     padding: 20px;
     font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
 }
 .card-destaque-01 img {
     height: 30px;
@@ -173,7 +168,6 @@ section {
     background-color: #b3d2f2; 
     padding: 20px;
     font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 
 }
 .card-destaque-02 img {
@@ -191,7 +185,7 @@ section {
     height: 50px;
     object-fit: contain;
 }
-.tech-card {
+.tech-bloco {
     display: flex;
     gap: 20px;
 }
@@ -199,18 +193,21 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 80%;
 }
 .tech-texto {
     text-align: center;
 }
-.tech {
+.tech-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     border: 1px solid #ddd;
     padding: 20px;
     margin: 10px 0;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    align-items: center;
 }
 
 .quiz-container {
@@ -253,34 +250,39 @@ section {
     margin-bottom:15px;
 }
 
-.acao-card {
+.acao-bloco {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .acao-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 20px;
     background-color: #f1f8f1;
-    width: 100%;
-    box-sizing: border-box;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 .acao-texto {
     text-align: center;
 }
-.acao {
+.acao-card {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
     border: 1px solid #ddd;
     padding: 20px;
     margin: 10px 0;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    width: 70%;
+    margin: 0 auto;
+    flex: 1;
+    min-width: 220px;
 }
-.acao img {
-    height: 30px;
+.acao-card img {
+    height:50px;
     width: auto;
 }
 .resultado-card {
@@ -348,10 +350,18 @@ section {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
-    .quiz-conteudo{
-        flex-direction:column;
+    .problema-bloco{
+        flex-direction: column;
+    }
+
+    .tech-bloco{
+        flex-direction: column;
+    }
+
+    .acao-card{
+        flex-direction: column;
     }
 
 }
@@ -367,7 +377,9 @@ section {
     }
 }
 
-footer {
+.rodape-bloco-01 {
+    display: flex;
+    justify-content: space-between;
     background:linear-gradient(
         to right,
         #012d1b,
@@ -376,8 +388,42 @@ footer {
     color:white;
     text-align:center;
     padding:40px;
-}
-footer img {
     height: 50px;
+    width: auto;
+
+}
+.rodape-card-03 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.rodape-card-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.rodape-card-03 img {
+    height: 30px;
+    width: auto;
+}
+.rodape-bloco-02 {
+
+    background-color: #011c11;
+    color: white;
+    text-align:center;
+    padding:1px;
+}
+   
+footer img {
+    height: 50px;
+    width: auto;
+}
+
+.limite-conteudo {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
