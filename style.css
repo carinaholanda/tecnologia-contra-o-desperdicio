@@ -110,18 +110,27 @@ main {
   align-items: center;
   text-align: center;
   background-color: ghostwhite;
+  max-width: 100vw;
 }
 
 section {
   padding: 40px 20px;
+  width: 100%;
 }
+.limite-conteudo {
 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .problema-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: #f1f8f1;
     box-sizing: border-box;
+    width: 100%;
 
 }
 .problema-bloco {
@@ -137,6 +146,7 @@ section {
     flex: 1;
     background-color: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    border-radius:   10px ;
 }
 
 .problema-texto {
@@ -153,9 +163,13 @@ section {
 }
 
 .card-destaque-01 {
+  
+    display: flex;
+    align-items: center;
+    gap: 10px;
     border-radius: 0 0 10px 10px;
     background-color:#c7e3cd; 
-    padding: 20px;
+    padding: 10px;
     font-weight: bold;
 
 }
@@ -164,11 +178,21 @@ section {
     width: auto;
 }
 .card-destaque-02 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     border-radius: 0 0 10px 10px;
     background-color: #b3d2f2; 
-    padding: 20px;
+    padding: 10px;
     font-weight: bold;
-
+  
+}
+.icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        margin-left: 40px;
+ 
 }
 .card-destaque-02 img {
     height: 30px;
@@ -199,8 +223,8 @@ section {
 }
 .tech-card {
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    justify-content: center;
+    gap: 30px;
     border: 1px solid #ddd;
     padding: 20px;
     margin: 10px 0;
@@ -253,15 +277,15 @@ section {
 .acao-bloco {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    width: 100%;
 }
 .acao-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
     background-color: #f1f8f1;
-    margin: 0 auto;
+
     flex-wrap: wrap;
+    max-width: 100vw;
 }
 .acao-texto {
     text-align: center;
@@ -277,9 +301,9 @@ section {
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
     width: 70%;
-    margin: 0 auto;
+
     flex: 1;
-    min-width: 220px;
+
 }
 .acao-card img {
     height:50px;
@@ -420,10 +444,3 @@ footer img {
     width: auto;
 }
 
-.limite-conteudo {
-    max-width: 1600px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
